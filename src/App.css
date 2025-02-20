@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-image: url("C:\Users\prash\OneDrive\Desktop\Captures\my program\Foodio\public\loginbackground.jpg"); */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0; 
+    height: 700px;
+  }
+
+  
+  /* Container for Login, Register, and Home */
+  .login {
+    background: white;
+    padding: 20px;
+    width: 420px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   
+  }
+
+  #login-heading {
+    color: #DA8F48;
+    font-family:cursive;
+    /* font-size: larger; */
+  }
+  #hat {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+
+  .register {
+    background: #DA8F48;
+    padding: 20px;
+    width: 420px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+  }
+
+  #register-heading {
+    color: white;
+    font-family:cursive;
+  }
+
+  #tools {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+
+  /* Input Fields */
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Buttons */
+  #loginbutton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #DA8F48;
+    color: white;
+    cursor: pointer;
+  }
+
+  #regbutton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #bc630f;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #DA8F48;
+  }
+
+  /* carousel */
+  /* General Carousel Styling */
+.carousel {
+  max-width: 90%; /* Set max width */
+  margin: 40px auto; /* Center and add space above/below */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel Images */
+.carousel-item img {
+  height: 450px; /* Adjust height */
+  object-fit: cover; /* Ensure images fill the area */
+  border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.carousel-control-prev, 
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Navigation Icons */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+}
+
+/* Carousel Indicators (Dots) */
+.carousel-indicators {
+  bottom: 15px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  transition: background 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: white;
+}
+
+/* Caption Styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 10px;
+  bottom: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  color: #ddd;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Fade-in Animation for Captions */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

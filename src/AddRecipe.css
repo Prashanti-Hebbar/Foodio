@@ -1,0 +1,92 @@
+/* AddRecipe.css or your global styles.css */
+
+.add-recipe-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8; /* Light background color */
+  }
+  
+  .add-recipe-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-recipe-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .add-recipe-container input[type="text"],
+  .add-recipe-container input[type="number"],
+  .add-recipe-container select,
+  .add-recipe-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Improve readability */
+  }
+  
+  .add-recipe-container textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .add-recipe-container button[type="submit"] {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-recipe-container button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .add-recipe-container img {
+    max-width: 200px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block; /* Make image a block element */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Style the form elements on focus */
+  .add-recipe-container input:focus,
+  .add-recipe-container select:focus,
+  .add-recipe-container textarea:focus {
+    outline: none;
+    border-color: #80bdff; /* Highlight the border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Subtle shadow on focus */
+  }
+  
+  /* Responsive adjustments (example) */
+  @media (max-width: 600px) {
+    .add-recipe-container {
+      padding: 10px;
+    }
+  
+    .add-recipe-container input[type="text"],
+    .add-recipe-container input[type="number"],
+    .add-recipe-container select,
+    .add-recipe-container textarea,
+    .add-recipe-container button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  
+  /* Styling for error messages (if you add them) */
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
