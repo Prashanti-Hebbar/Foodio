@@ -21,7 +21,7 @@ const Register = ({ setIsLoggedIn }) => {
   return (
     <div className="register">
       <h1 id="register-heading">Foodio</h1>
-      <img src="/cheftools.jpg" id="tools" alt="..." />
+      <img src="/hat.jpg" id="tools" alt="..." />
       <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
       <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
       <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />

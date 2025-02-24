@@ -1,9 +1,10 @@
 /* General Navbar Styling */
 .navbar {
-    position:sticky;
+    position:relative;
     padding: 12px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     height: 60px;
+    z-index: 1050;
   }
   
   /* Brand Name */
@@ -35,7 +36,7 @@
 /* Dropdown Button */
 .dropdown .btn-secondary {
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 20px;
     color: white !important;
     background-color: transparent;
     border: none;
@@ -50,6 +51,8 @@
 
 /* Dropdown Menu */
 .dropdown-menu {
+    position: absolute;
+    z-index: 2000 !important;
     background-color: rgba(0, 0, 0, 0.8); /* Dark background to match navbar */
     border: none;
     border-radius: 5px;
@@ -58,6 +61,7 @@
 
 /* Dropdown Items */
 .dropdown-menu .dropdown-item {
+    z-index: 1050;
     font-size: 14px;
     padding: 10px 15px;
     color: white !important;
@@ -102,7 +106,7 @@
     font-size: 16px;
     border-radius: 20px;
     padding: 8px 15px;
-    margin-left: 300px;
+    margin-left: 250px;
     transition: 0.3s ease-in-out;
     /* background-color:#ffcc00; */
   }
@@ -113,11 +117,39 @@
     font-size: 16px;
     border-radius: 20px;
     padding: 8px 15px;
-    margin-left: 10px;
+    margin-left: 7px;
     transition: 0.3s ease-in-out;
     /* background-color:#ffcc00; */
   }
   
+  .myprofile i {
+    margin-left: 17px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.myprofile i:hover {
+    color: #ffcc00;
+}
+.myprofile {
+  position: relative;
+}
+
+.myprofile i:hover::after {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 110;
+  content: "My Profile";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffcc00;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
   .link-light:hover {
     opacity: 0.8;
   }

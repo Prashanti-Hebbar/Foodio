@@ -1,11 +1,16 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
+import Categories from "./components/Categories";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import AddRecipe from "./pages/AddRecipe";
 import About from "./pages/About";
+import ViewRecipe from "./pages/ViewRecipe";
+import Profile from "./pages/profile";
+
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,6 +32,11 @@ function App() {
         <Route path="/home" element={ <Home /> } />
         <Route path="/AddRecipe" element={ <AddRecipe /> } />
         <Route path="/About" element={ <About /> } />
+        <Route path="/ViewRecipe" element={<ViewRecipe />}/>
+        <Route path="/recipe/:id" element={<ViewRecipe />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/Categories" element={<Categories />} />
+
       </Routes>
     </Router>
   );

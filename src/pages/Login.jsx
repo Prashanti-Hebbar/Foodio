@@ -23,7 +23,7 @@ return (
   <div>
    <div className="login">
     <h1 id="login-heading">Foodio</h1>
-    <img src="/hat.jpg" id="hat" alt="chefhat" />
+    <img src="/cheftools.jpg" id="hat" alt="chefhat" />
     <br /><br />
     <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
     <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />

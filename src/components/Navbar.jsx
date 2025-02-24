@@ -20,7 +20,7 @@ const Navbar = () => {
     Dashboard
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Filter Recipe</a></li>
+    <li><a class="dropdown-item" href="/Categories">Categories</a></li>
     <li><a class="dropdown-item" href="/AddRecipe">Add New Recipe</a></li>
     {/* <li><a class="dropdown-item" href="#">Something else here</a></li> */}
   </ul>
@@ -36,6 +36,8 @@ const Navbar = () => {
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
     <a class="loginlink" href="/login">Login </a><a class="reglink" href="/register"> Register</a>
+    <a class="myprofile" href="/profile"><i class="fas fa-user"></i></a>
+
   </div>
 </nav>
 </div>
