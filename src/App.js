@@ -9,6 +9,14 @@ import AddRecipe from "./pages/AddRecipe";
 import About from "./pages/About";
 import ViewRecipe from "./pages/ViewRecipe";
 import Profile from "./pages/profile";
+import Breakfast from './pages/categories/Breakfast';
+import Lunch from "./pages/categories/Lunch";
+import Desserts from "./pages/categories/Desserts";
+import Dinner from "./pages/categories/Dinner";
+import Appetizer from "./pages/categories/Appetizer";
+import Sides from "./pages/categories/Sides";
+import Snacks from "./pages/categories/Snacks";
+import Drinks from "./pages/categories/Drinks";
 
 
 
@@ -36,6 +44,15 @@ function App() {
         <Route path="/recipe/:id" element={<ViewRecipe />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/Categories" element={<Categories />} />
+        <Route path="/recipes/breakfast" element={<Breakfast />} />
+        <Route path="/recipes/Lunch" element={<Lunch />} />
+        <Route path="/recipes/dessert" element={<Desserts />} />
+        <Route path="/recipes/dinner" element={<Dinner />} />
+        <Route path="/recipes/appetizers" element={<Appetizer />} />
+        <Route path="/recipes/sides" element={<Sides />} />
+        <Route path="/recipes/snacks" element={<Snacks />} />
+        <Route path="/recipes/drinks" element={<Drinks />} />
+
 
       </Routes>
     </Router>
